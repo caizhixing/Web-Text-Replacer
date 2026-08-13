@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Text Flow</title>
+  <desc id="desc">Two text lines flowing through a replacement loop</desc>
+  <rect width="512" height="512" rx="112" fill="#6C3FD8"/>
+  <rect x="104" y="130" width="304" height="252" rx="38" fill="#F2EDFF"/>
+  <path d="M146 190h146M146 235h93" stroke="#6C3FD8" stroke-width="21" stroke-linecap="round"/>
+  <path d="M146 300h155M146 345h112" stroke="#E45A8D" stroke-width="21" stroke-linecap="round"/>
+  <path d="M312 245c42 0 68 23 68 57 0 25-14 44-37 53" fill="none" stroke="#FFD166" stroke-width="19" stroke-linecap="round"/>
+  <path d="m343 329-10 32 33-2" fill="none" stroke="#FFD166" stroke-width="19" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

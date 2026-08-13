@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Web Text Replacer",
+  "version": "1.0.0",
+  "description": "Replace webpage text using a local key-value mapping.",
+  "permissions": ["storage", "tabs", "scripting"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_title": "Web Text Replacer",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ]
+}

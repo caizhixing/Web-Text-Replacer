@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Web Text Replacer</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <h1>Web Text Replacer</h1>
+        <p>Replace webpage text with values from a local mapping file.</p>
+      </div>
+      <label class="switch" title="Enable or disable replacements">
+        <input id="enabled" type="checkbox" checked>
+        <span></span>
+      </label>
+    </header>
+
+    <div class="trigger-header">
+      <label class="field-label" for="trigger-input">Limit to matching URLs</label>
+      <label class="switch" title="Enable URL filtering">
+        <input id="trigger-enabled" type="checkbox">
+        <span></span>
+      </label>
+    </div>
+    <textarea id="trigger-input" class="trigger-input" spellcheck="false" placeholder="Comma or new line separated URL patterns" hidden></textarea>
+    <label class="file-picker" for="mapping-file">
+      <span>Choose mapping file</span>
+      <input id="mapping-file" type="file" accept="application/json,.json">
+    </label>
+    <textarea id="mapping-input" spellcheck="false" placeholder='{"source text":"replacement text"}'></textarea>
+    <div class="actions">
+      <button id="apply" class="primary">Apply replacements</button>
+      <button id="clear" class="secondary">Clear settings</button>
+    </div>
+    <p id="status" role="status" aria-live="polite"></p>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
